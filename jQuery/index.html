@@ -8,8 +8,19 @@
         <script src="styles/jQuery/jquery-ui-1.10.4.js?v=0.1"></script>
         <style type="text/css">
             .original-text-area { min-height: 30rem; }
-            .ui-accordion .ui-accordion-content {padding: .5rem;}    
 
+            .ui-widget { font-size: 1rem; }
+
+            .ui-accordion .ui-accordion-content {
+                overflow: hidden;
+                padding: .5rem;
+            }
+
+            .ui-state-active { border-color: black }
+
+            .ui-accordion-content-active {
+                border-color: black;
+            }
         </style>
     </head>
     <body>
@@ -37,35 +48,30 @@
             <!-- This is source ordered to be pulled to the left on larger screens -->
             <div class="large-3 columns">
                 <h3>Steps</h3>
-                <div class="side-nav">
+                <div class="side-nav steps">
                     <div data-animation="accordion">
                         <div>
                             <h6>Step 1</h6>
                             <div>
-                                <form>
-                                    <div class="row">
-                                        <div class="large-12 columns">
-                                            <label>
-                                                <input type="text" placeholder="Find Text" />
-                                            </label>
-                                        </div>
-                                        <div class="large-12 columns">
-                                            <label>
-                                                <input type="text" placeholder="Replace Text" />
-                                            </label>
-                                        </div>
-                                         <div class="large-12 columns">
-                                             <input type="checkbox" checked="checked" /><label >Active</label>
-                                        </div>
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>
+                                            <input type="text" placeholder="Find Text" />
+                                        </label>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>
+                                            <input type="text" placeholder="Replace Text" />
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                      
                     </div>
                 </div>
                 <p><img src="http://placehold.it/320x240&text=Ad" /></p>
-        
             </div>
     
         </div>
@@ -87,18 +93,18 @@
     <script>
         $(function () {
             $("[data-animation='accordion']")
-              .accordion({
-                  header: "> div > h6"
-              })
-              .sortable({
-                  axis: "y",
-                  handle: "h6",
-                  stop: function (event, ui) {
-                      // IE doesn't register the blur when sorting
-                      // so trigger focusout handlers to remove .ui-state-focus
-                      ui.item.children("h6").triggerHandler("focusout");
-                  }
-              });
+                .accordion({
+                    header: "> div > h6"
+                })
+                .sortable({
+                    axis: "y",
+                    handle: "h6",
+                    stop: function (event, ui) {
+                        // IE doesn't register the blur when sorting
+                        // so trigger focusout handlers to remove .ui-state-focus
+                        ui.item.children("h6").triggerHandler("focusout");
+                    }
+                });
         });
-  </script>
+    </script>
 </html>
