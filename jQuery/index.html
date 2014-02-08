@@ -3,6 +3,14 @@
     <head>
         <title>Control H | Find and Replace Back to Back</title>
         <link href="styles/foundation/css/foundation.min.css?v=0.1" rel="stylesheet" />
+        <link href="styles/jQuery/jquery-ui-1.10.4.css?v=0.1" rel="stylesheet" />
+        <script src="styles/jQuery/jquery-1.10.2.js?v=0.1"></script>
+        <script src="styles/jQuery/jquery-ui-1.10.4.js?v=0.1"></script>
+        <style type="text/css">
+            .original-text-area { min-height: 30rem; }
+            .ui-accordion .ui-accordion-content {padding: .5rem;}    
+
+        </style>
     </head>
     <body>
         <!-- Requires Foundation 4 | visit http://foundation.zurb.com to download -->
@@ -16,10 +24,11 @@
            
             <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
             <div class="large-9 columns">
-                <h3>Find and Replace <span> </span> <small>Back to Back</small></h3>
+                <h3>Find and Replace
+                    <small>Back to Back</small></h3>
                 <div class="row">
                     <div class="columns">
-                        <textarea placeholder="Paste Original Text Here" style="min-height: 30rem;" ></textarea>      
+                        <textarea placeholder="Paste Original Text Here" class="original-text-area" ></textarea>      
                     </div>
                 </div>
             </div>
@@ -28,9 +37,33 @@
             <!-- This is source ordered to be pulled to the left on larger screens -->
             <div class="large-3 columns">
                 <h3>Steps</h3>
-                <ul class="side-nav">
-                    <li><a href="#">Nothing</a></li>
-                </ul>
+                <div class="side-nav">
+                    <div data-animation="accordion">
+                        <div>
+                            <h6>Step 1</h6>
+                            <div>
+                                <form>
+                                    <div class="row">
+                                        <div class="large-12 columns">
+                                            <label>
+                                                <input type="text" placeholder="Find Text" />
+                                            </label>
+                                        </div>
+                                        <div class="large-12 columns">
+                                            <label>
+                                                <input type="text" placeholder="Replace Text" />
+                                            </label>
+                                        </div>
+                                         <div class="large-12 columns">
+                                             <input type="checkbox" checked="checked" /><label >Active</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
                 <p><img src="http://placehold.it/320x240&text=Ad" /></p>
         
             </div>
@@ -45,10 +78,27 @@
                 <hr />
                 <div class="row">
                     <div class="large-6 columns">
-                            <a href="mailto:WhenYouBelieve2014@gmail.com">WhenYouBelieve2014@gmail.com</a>
+                        <a href="mailto:WhenYouBelieve2014@gmail.com">WhenYouBelieve2014@gmail.com</a>
                     </div>
                 </div>
             </div> 
         </footer>              
     </body>
+    <script>
+        $(function () {
+            $("[data-animation='accordion']")
+              .accordion({
+                  header: "> div > h6"
+              })
+              .sortable({
+                  axis: "y",
+                  handle: "h6",
+                  stop: function (event, ui) {
+                      // IE doesn't register the blur when sorting
+                      // so trigger focusout handlers to remove .ui-state-focus
+                      ui.item.children("h6").triggerHandler("focusout");
+                  }
+              });
+        });
+  </script>
 </html>

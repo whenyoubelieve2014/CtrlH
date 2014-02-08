@@ -83,6 +83,23 @@
     <Content Include="styles\foundation\js\vendor\jquery.js" />
     <Content Include="styles\foundation\js\vendor\modernizr.js" />
     <Content Include="styles\foundation\js\vendor\placeholder.js" />
+    <Content Include="styles\jQuery\images\animated-overlay.gif" />
+    <Content Include="styles\jQuery\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="styles\jQuery\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="styles\jQuery\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="styles\jQuery\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="styles\jQuery\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="styles\jQuery\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="styles\jQuery\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="styles\jQuery\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="styles\jQuery\images\ui-icons_222222_256x240.png" />
+    <Content Include="styles\jQuery\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="styles\jQuery\images\ui-icons_454545_256x240.png" />
+    <Content Include="styles\jQuery\images\ui-icons_888888_256x240.png" />
+    <Content Include="styles\jQuery\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="styles\jQuery\jquery-ui-1.10.4.css" />
+    <Content Include="styles\jQuery\jquery-1.10.2.js" />
+    <Content Include="styles\jQuery\jquery-ui-1.10.4.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
