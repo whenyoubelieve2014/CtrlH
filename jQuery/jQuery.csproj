@@ -58,31 +58,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="scripts\index\app.js" />
+    <Content Include="scripts\vendor\angular-1.2.12.min.js" />
     <Content Include="styles\foundation\css\foundation.css" />
     <Content Include="styles\foundation\css\foundation.min.css" />
     <Content Include="styles\foundation\css\normalize.css" />
-    <Content Include="styles\foundation\js\foundation.min.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.abide.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.accordion.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.alert.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.clearing.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.dropdown.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.equalizer.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.interchange.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.joyride.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.magellan.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.offcanvas.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.orbit.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.reveal.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.tab.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.tooltip.js" />
-    <Content Include="styles\foundation\js\foundation\foundation.topbar.js" />
-    <Content Include="styles\foundation\js\vendor\fastclick.js" />
-    <Content Include="styles\foundation\js\vendor\jquery.cookie.js" />
-    <Content Include="styles\foundation\js\vendor\jquery.js" />
-    <Content Include="styles\foundation\js\vendor\modernizr.js" />
-    <Content Include="styles\foundation\js\vendor\placeholder.js" />
+    <Content Include="scripts\vendor\foundation.min.js" />
+    <Content Include="scripts\vendor\foundation.abide.js" />
+    <Content Include="scripts\vendor\foundation.accordion.js" />
+    <Content Include="scripts\vendor\foundation.alert.js" />
+    <Content Include="scripts\vendor\foundation.clearing.js" />
+    <Content Include="scripts\vendor\foundation.dropdown.js" />
+    <Content Include="scripts\vendor\foundation.equalizer.js" />
+    <Content Include="scripts\vendor\foundation.interchange.js" />
+    <Content Include="scripts\vendor\foundation.joyride.js" />
+    <Content Include="scripts\vendor\foundation.js" />
+    <Content Include="scripts\vendor\foundation.magellan.js" />
+    <Content Include="scripts\vendor\foundation.offcanvas.js" />
+    <Content Include="scripts\vendor\foundation.orbit.js" />
+    <Content Include="scripts\vendor\foundation.reveal.js" />
+    <Content Include="scripts\vendor\foundation.tab.js" />
+    <Content Include="scripts\vendor\foundation.tooltip.js" />
+    <Content Include="scripts\vendor\foundation.topbar.js" />
+    <Content Include="scripts\vendor\jquery.cookie.js" />
     <Content Include="styles\jQuery\images\animated-overlay.gif" />
     <Content Include="styles\jQuery\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="styles\jQuery\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -98,8 +96,8 @@
     <Content Include="styles\jQuery\images\ui-icons_888888_256x240.png" />
     <Content Include="styles\jQuery\images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="styles\jQuery\jquery-ui-1.10.4.css" />
-    <Content Include="styles\jQuery\jquery-1.10.2.js" />
-    <Content Include="styles\jQuery\jquery-ui-1.10.4.js" />
+    <Content Include="scripts\vendor\jquery-1.10.2.js" />
+    <Content Include="scripts\vendor\jquery-ui-1.10.4.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -115,7 +113,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="scripts\" />
     <Folder Include="styles\site\" />
   </ItemGroup>
   <PropertyGroup>
