@@ -26,33 +26,12 @@
         };
     });
 
-
-    //var $accordion = function() {
-    //    return $("[data-animation='accordion']");
-    //};
-    //var createAccordion = function() {
-    //    $accordion().accordion({
-    //            header: "> div > h6"
-    //        }).sortable({
-    //            axis: "y",
-    //            handle: "h6",
-    //            stop: function(event, ui) {
-    //                // IE doesn't register the blur when sorting
-    //                // so trigger focusout handlers to remove .ui-state-focus
-    //                ui.item.children("h6").triggerHandler("focusout");
-    //            }
-    //        });
-    //};
-
     myApp.controller('lister', function ($scope) {
         $scope.steps = [1,2,3];
         $scope.add = function() {
             $scope.steps.push(4);
-            //$accordion().delay(1000).accordion("refresh");
         };
     });
 
-    //$(function() {
-    //    createAccordion();
-    //});
+   
 })();
